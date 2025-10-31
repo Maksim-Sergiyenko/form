@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Реєстрація</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <form class="form" name="signup" action="#" method="post"> 
+    <h1 class="form__title">Реєстрація</h1>
+      <div class="form_group">
+        <label for="fname">Ім'я:</label><br>
+        <input class="form_input" type="text" id="fname" name="fname" value=""/>
+      </div>
+      <div class="form_group">
+        <label for="lname">Прізвище:</label><br>
+        <input class="form_input" type="text" name="lname" value=""/>
+      </div>
+      <div class="form_group">
+        <label for="email">E-mail:</label><br>
+        <input class="form_input" type="email" name="email" value=""/>
+      </div>
+      <div class="form_group">
+        <label for="password">Пароль:</label><br>
+        <input class="form_input" type="password" name="password" value=""/>
+      </div>
+      <div class="form_group">
+        <label for="password">Повторіть пароль:</label><br>
+        <input class="form_input" type="password" name="password" value=""/>
+      </div>
+      <div class="form_group">
+        <label for="gender">Стать:</label><br>
+        <input type="radio" name="gender" value="0" />Чоловіча
+        <input type="radio" name="gender" value="1" />Жіноча
+      </div>
+      <div class="form_group">
+        <label for="age">Вік:</label><br>
+        <input class="form_input" type="text" name="age" value=""/>
+      </div>
+      <div class="form_group">
+        <label for="study">Курс:</label><br>
+        <select class="form_input" name="kurs">
+          <option value="Front-End">Front-End</option>
+          <option value="Back-End">Back-End</option>
+          <option value="Project Management">Project Management</option>
+          <option value="QA Manual">QA Manual</option>
+        </select>
+      </div>
+      <div class="form_group">
+        <label for="area">Повна адреса:</label><br>
+        <textarea placeholder="Країна, регіон, місто, селище, вулиця"></textarea>
+      </div>
+      <div class="form_group">
+        <label for="file">Оберіть фото:</label>
+        <input class="form_input" type="file" name="photo" />
+      </div>
+      <div class="form_group">
+        <label for="rules">Я погоджуюсь з обробкою персональних данних:</label>
+        <input type="checkbox" name="rules">
+      </div>
+        <div class="button_submit">
+          <button class="form_button" type="submit">Зареєструватися</button>
+          <button class="form_button_submit" type="reset">Очистити форму</button>
+        </div>
+
+  </form>
+  
+</body>
+</html>
